@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>Health Dx</title>
+  <meta name="description" content="Health Dx is a cutting-edge health app that scans and diagnoses injuries using advanced machine learning algorithms. Provides quick and accurate results.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Health Dx</h1>
+    <label for="file-upload" class="custom-file-upload" id="file-upload-label">Upload Image</label>
+    <input id="file-upload" type="file" accept="image/*" />
+
+    <div id="file-name"></div>
+
+    <button id="scan-button" class="scan-button">Scan Now</button>
+
+    <div id="scan-animation" class="scan-animation">
+      <img src="scan.gif" alt="Scanning..." width="100" />
+      <p>Scanning...</p>
+    </div>
+
+    <div id="diagnosis" class="diagnosis">
+      <p><strong>Diagnosis:</strong> <span id="diagnosis-result">Placeholder for injury diagnosis.</span></p>
+    </div>
+  </div>
+
+<canvas id="imageCanvas" style="display:none;"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
